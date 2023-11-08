@@ -1,4 +1,4 @@
-docker run -it -v .:/workspace --gpus all --network=host container_id bash
+docker run -it -v .:/workspace --gpus all --network=host IMAGE_ID bash
 
 dlprof --mode=pytorch -f true --iter_start 20 --iter_stop 80 python lenet.py
 
